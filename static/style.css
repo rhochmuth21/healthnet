@@ -1,0 +1,178 @@
+/*
+  HealthNet CSS Styles
+  ==============================================================================
+
+  Header
+  Index Login
+  Profile
+
+  Color Scheme:
+  White: ffffff
+  Grey: d4d4d4
+  Main Red: D22121
+  Darker Red: A81E1E
+  Dark Red: 891818
+
+*/
+
+/* Fonts */
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+/*
+  Animations
+*/
+@keyframes in-from-bottom {
+  from { margin-top: 2000px; }
+  to { margin-top: 8%; }
+}
+@-webkit-keyframes in-from-bottom {
+  from { margin-top: 2000px; }
+  to { margin-top: 8%; }
+}
+@-moz-keyframes in-from-bottom {
+  from { margin-top: 2000px; }
+  to { margin-top: 8%; }
+}
+@-o-keyframes in-from-bottom {
+  from { margin-top: 2000px; }
+  to { margin-top: 8%; }
+}
+
+/*
+  ====================================================================== Header
+*/
+header.main-header {
+  height: 70px;
+  background-color: #ffffff;
+  z-index: 3;
+
+  -webkit-box-shadow: 0px 3px 18px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 3px 18px -5px rgba(0,0,0,0.75);
+  box-shadow: 0px 3px 18px -5px rgba(0,0,0,0.75);
+}
+
+header.main-header img {
+  position: absolute;
+  top: 12.5px;
+  left: 12.5px;
+}
+
+/*
+  ================================================================= Index Login
+*/
+.index-login {
+  width: 400px;
+  margin: 0 auto 0 auto;
+  margin-top: 8%;
+  z-index: 2;
+
+  animation-name: in-from-bottom;
+  animation-duration: 1s;
+  -webkit-animation-name: in-from-bottom;
+  -webkit-animation-duration: 1s;
+  -moz-animation-name: in-from-bottom;
+  -moz-animation-duration: 1s;
+  -o-animation-name: in-from-bottom;
+  -o-animation-duration: 1s;
+}
+
+.index-login-inner {
+  width: 80%;
+  height: auto;
+  margin: 20px auto 20px auto;
+  padding: 20px;
+  overflow: hidden;
+
+  -webkit-box-shadow: 0px 0px 18px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 18px -5px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 18px -5px rgba(0,0,0,0.75);
+}
+
+#box-message {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.index-login form {
+  height: auto;
+}
+
+input[type="text"] {
+  width: 234px;
+}
+
+input[type="password"] {
+  width: 234px;
+}
+
+input[type="email"] {
+  width: 234px;
+}
+
+input[type="submit"] {
+  width: 100%;
+}
+
+/*
+  =============================================================== Profile
+*/
+
+.profile-pic {
+  width: auto;
+  margin: 0 auto 0 auto;
+  margin-top: 30;
+  z-index: 2;
+
+  animation-name: in-from-bottom;
+  animation-duration: 1s;
+  -webkit-animation-name: in-from-bottom;
+  -webkit-animation-duration: 1s;
+  -moz-animation-name: in-from-bottom;
+  -moz-animation-duration: 1s;
+  -o-animation-name: in-from-bottom;
+  -o-animation-duration: 1s;
+}
+
+#profile-pic-pic {
+    max-width: 100%;
+}
+
+.profile-pic-inner {
+  width: 90%;
+  height: auto;
+  margin: 20px auto 20px auto;
+  padding: 20px;
+
+  -webkit-box-shadow: 0px 0px 18px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 18px -5px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 18px -5px rgba(0,0,0,0.75);
+}
+
+.basic-info {
+  width: auto;
+  margin: 0 auto 0 auto;
+  margin-top: 30;
+  z-index: 2;
+
+  animation-name: in-from-bottom;
+  animation-duration: 1.2s;
+  -webkit-animation-name: in-from-bottom;
+  -webkit-animation-duration: 1.2s;
+  -moz-animation-name: in-from-bottom;
+  -moz-animation-duration: 1.2s;
+  -o-animation-name: in-from-bottom;
+  -o-animation-duration: 1.2s;
+}
+
+.basic-info-inner {
+  width: 95%;
+  height: auto;
+  margin: 20px auto 20px auto;
+  padding: 20px;
+
+  -webkit-box-shadow: 0px 0px 18px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 18px -5px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 18px -5px rgba(0,0,0,0.75);
+}
