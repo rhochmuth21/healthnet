@@ -66,6 +66,61 @@
     animation: fade-grow-out .6s cubic-bezier(.55,-0.04,.91,.94) forwards;
 }
 
+@keyframes in-from-bottom {
+  from { margin-top: 2000px; }
+  to { margin-top: 8%; }
+}
+@-webkit-keyframes in-from-bottom {
+  from { margin-top: 2000px; }
+  to { margin-top: 8%; }
+}
+@-moz-keyframes in-from-bottom {
+  from { margin-top: 2000px; }
+  to { margin-top: 8%; }
+}
+@-o-keyframes in-from-bottom {
+  from { margin-top: 2000px; }
+  to { margin-top: 8%; }
+}
+.animate-from-bottom {
+  animation-name: in-from-bottom;
+  animation-duration: 1s;
+  -webkit-animation-name: in-from-bottom;
+  -webkit-animation-duration: 1s;
+  -moz-animation-name: in-from-bottom;
+  -moz-animation-duration: 1s;
+  -o-animation-name: in-from-bottom;
+  -o-animation-duration: 1s;
+}
+
+@keyframes animate-fade-out {
+  from { opacity: 100%; }
+  to { opacity: 0%; }
+}
+@-webkit-keyframes animate-fade-out {
+  from { opacity: 100%; }
+  to { opacity: 0%; }
+}
+@-moz-keyframes animate-fade-out {
+  from { opacity: 100%; }
+  to { opacity: 0%; }
+}
+@-o-keyframes animate-fade-out {
+  from { opacity: 100%; }
+  to { opacity: 0%; }
+}
+.animate-fade-out {
+
+  animation-name: animate-fade-out;
+  animation-duration: 5s;
+  -webkit-animation-name: animate-fade-out;
+  -webkit-animation-duration: 5s;
+  -moz-animation-name: animate-fade-out;
+  -moz-animation-duration: 5s;
+  -o-animation-name: animate-fade-out;
+  -o-animation-duration: 5s;
+}
+
 /*
   ======================================================================== Body
 */

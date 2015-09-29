@@ -10,4 +10,6 @@ urlpatterns = [
 
     # Have the root URL route to the profiles app URLs
     url(r'^', include('profiles.urls')),
+
+    url(r'^appointments/', include('appointments.urls')),
 ]

@@ -17,12 +17,21 @@ urlpatterns = [
     # The login URL links to the login view which authenticates a user with the given form data
     url(r'^login/$', views.login, name='login'),
 
+    # The logout URL links to the login view which simply logs out the current session
+    url(r'^logout/$', views.logout, name='logout'),
+
     # This URL links to the viewProfile view that displays a user's information
-    url(r'^profiles/(?P<userName>\w*)$', views.viewProfile, name='viewProfile'),
+    url(r'^profiles/(?P<username>\w*)$', views.viewProfile, name='viewProfile'),
 
     # This URL links to the addContact view which presents a form to add a new user contact
-    url(r'^profiles/(?P<userName>\w+)/addcontact$', views.addContact, name='addContact'),
+    url(r'^profiles/(?P<username>\w+)/addcontact$', views.addContact, name='addContact'),
 
     # This URL links to the editContact view which presents a form to edit their contacts
-    url(r'^profiles/(?P<userName>\w+)/editcontact$', views.editContact, name='addContact'),
+    url(r'^profiles/(?P<username>\w+)/editcontact/(?P<pk>[0-9]+)$', views.editContact, name='addContact'),
+
+    # This URL links to the deleteContact view which deletes the contact
+    url(r'^profiles/(?P<username>\w+)/deletecontact/(?P<pk>[0-9]+)$', views.deleteContact, name='deleteContact'),
+
+    # This URL links to the editProfile view which presents a form to edit profile information
+    url(r'^profiles/(?P<username>\w+)/edit', views.editProfile, name="editProfile"),
 ]

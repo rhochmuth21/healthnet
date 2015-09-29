@@ -22,22 +22,6 @@
 /*
   Animations
 */
-@keyframes in-from-bottom {
-  from { margin-top: 2000px; }
-  to { margin-top: 8%; }
-}
-@-webkit-keyframes in-from-bottom {
-  from { margin-top: 2000px; }
-  to { margin-top: 8%; }
-}
-@-moz-keyframes in-from-bottom {
-  from { margin-top: 2000px; }
-  to { margin-top: 8%; }
-}
-@-o-keyframes in-from-bottom {
-  from { margin-top: 2000px; }
-  to { margin-top: 8%; }
-}
 
 /*
   ====================================================================== Header
@@ -66,15 +50,6 @@ header.main-header img {
   margin: 0 auto 0 auto;
   margin-top: 8%;
   z-index: 2;
-
-  animation-name: in-from-bottom;
-  animation-duration: 1s;
-  -webkit-animation-name: in-from-bottom;
-  -webkit-animation-duration: 1s;
-  -moz-animation-name: in-from-bottom;
-  -moz-animation-duration: 1s;
-  -o-animation-name: in-from-bottom;
-  -o-animation-duration: 1s;
 }
 
 .index-login-inner {

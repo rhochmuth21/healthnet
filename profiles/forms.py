@@ -3,7 +3,7 @@ HealthNet Profile Forms
 """
 from django import forms
 
-from .models import User, Contact
+from .models import User, Contact, Patient
 
 
 # This form contains a text field for a username and a password field for a password.
@@ -32,4 +32,17 @@ class ContactForm(forms.ModelForm):
             'phoneNumber': 'Phone Number',
             'address': 'Address',
             'relation': 'Relationship',
+        }
+
+
+class EditPatientForm(forms.ModelForm):
+    class Meta:
+        model = Patient
+        fields = ('height', 'weight', 'allergies', 'conditions', 'hospitalPref')
+        labels = {
+            'height': 'Height',
+            'weight': 'Weight',
+            'allergies': 'Allergies',
+            'conditions': 'Medical Conditions',
+            'hospitalPref': 'Preferred Hospital',
         }

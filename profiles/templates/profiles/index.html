@@ -21,13 +21,7 @@
     <!-- This is where the unique content for each page goes -->
     <div class="content">
 
-      <div class="center">
-        {% if message %}
-          <h2 class="text-center" style="color: #ffffff; text-align: center;">{{ message }}</h2>
-        {% endif %}
-      </div>
-
-      <div class="index-login">
+      <div {% if not messages %}class="index-login animate-from-bottom"{% else %}class="index-login"{% endif %}>
         <div class="index-login-inner bg-color-white rcorners-10" id="index-login-inner">
           <div class="center" style="height: 60px; position: relative;"><h1 class="text-center" id="box-message">Login</h1></div>
             <form action="/login/" method="post" name="indexform" id="indexform">
@@ -45,6 +39,18 @@
             <p class="text-center" style="display: inline;" id="link-p">Don't have an account?  </p><a href="" id="link-a">Register</a>
           </div>
         </div>
+      </div>
+
+      <div class="center">
+        {% if error_message %}
+          <h2 class="text-center" style="color: #ffffff; text-align: center;">{{ error_message }}</h2>
+        {% endif %}
+
+        {% if messages %}
+          {% for message in messages %}
+          <h2 class="text-center animate-fade-out" style="color: #ffffff; text-align: center;">{{ message }}</h2>
+          {% endfor %}
+        {% endif %}
       </div>
 
     </div>
