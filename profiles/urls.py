@@ -26,12 +26,18 @@ urlpatterns = [
     # This URL links to the addContact view which presents a form to add a new user contact
     url(r'^profiles/(?P<username>\w+)/addcontact$', views.addContact, name='addContact'),
 
+    # This URL links to the viewContacts view which shows a list of all the user's contacts
+    url(r'^profiles/(?P<username>\w+)/contacts$', views.viewContacts, name='viewContacts'),
+
     # This URL links to the editContact view which presents a form to edit their contacts
-    url(r'^profiles/(?P<username>\w+)/editcontact/(?P<pk>[0-9]+)$', views.editContact, name='addContact'),
+    url(r'^profiles/(?P<username>\w+)/editcontact/(?P<pk>[0-9]+)$', views.editContact, name='editContact'),
 
     # This URL links to the deleteContact view which deletes the contact
     url(r'^profiles/(?P<username>\w+)/deletecontact/(?P<pk>[0-9]+)$', views.deleteContact, name='deleteContact'),
 
     # This URL links to the editProfile view which presents a form to edit profile information
-    url(r'^profiles/(?P<username>\w+)/edit', views.editProfile, name="editProfile"),
+    url(r'^profiles/(?P<username>\w+)/edit$', views.editProfile, name="editProfile"),
+
+    # This is a temporary URL used to test new UI features
+    url(r'^ui$', views.uiTest, name="uiTest"),
 ]

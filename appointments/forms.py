@@ -5,8 +5,14 @@ from django import forms
 
 from .models import Appointment
 
-class AppointmentForm(forms.ModelForm):
+class PatientAppointmentForm(forms.ModelForm):
     class Meta:
         model = Appointment
-        fields = '__all__'
-
+        fields = ('title', 'doctor', 'hospital', 'room', 'reason')
+        labels = {
+            'title': 'Title',
+            'doctor': 'Doctor',
+            'hospital': 'Hospital',
+            'room': 'Room',
+            'reason': 'Reason'
+        }
